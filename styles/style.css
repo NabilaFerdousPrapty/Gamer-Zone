@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+.section_padding {
+  padding: 20px 236px;
+}
+/* .......................
+header section starts here
+........................ */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+nav ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #3c354f;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+.nav-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+.follow_on a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  width: 262px;
+  height: 56px;
+  flex-shrink: 0;
+  gap: 20px;
+}
+nav ul li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .section_padding {
+    padding: 15px 120px;
+  }
+  .nav-title {
+    margin-bottom: 20px;
+  }
+
+  nav ul li {
+    margin-bottom: 3px;
+  }
+  nav ul li a {
+    padding: 5px 5px;
+    border-radius: 5px;
+  }
+  .follow_on {
+    margin-top: 20px;
+  }
+  .follow_on a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .section_padding {
+    padding: 5px 30px;
+  }
+  nav {
+    gap: 40px;
+  }
+  .nav-title {
+    margin-bottom: 20px;
+  }
+
+  nav ul li {
+    margin-bottom: 3px;
+  }
+  nav ul {
+    gap: 10px;
+  }
+  nav ul li a {
+    padding: 5px 5px;
+    border-radius: 5px;
+  }
+  .follow_on {
+    margin-top: 20px;
+  }
+  .follow_on a {
+    padding: 10px 10px;
+    border-radius: 5px;
+    gap: 6px;
+    width: 220px;
+  height: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .section_padding {
+    padding: 5px 30px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .nav-title {
+    margin-bottom: 20px;
+  }
+
+  nav ul li {
+    margin-bottom: 3px;
+  }
+  nav ul {
+    gap: 10px;
+  }
+  nav ul li a {
+    padding: 2px 3px;
+    border-radius: 5px;
+  }
+  .follow_on {
+    margin-top: 20px;
+  }
+  .follow_on a {
+    padding: 10px 10px;
+    border-radius: 5px;
+    gap: 6px;
+    width: 200px;
+  height: 37px;
+  }
+}
