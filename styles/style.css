@@ -267,6 +267,48 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+/* 
+game play section starts here 
+.............................*/
+.game-play{
+  margin-top: 100px;
+}
+.play-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+}
+.game-play-images{
+  position: relative;
+}
+.upper-image{
+  width: 100%;
+  height: 100%;
+}
+.float{
+  position: absolute;
+  top: 75%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+.game-title,.game-para{
+  text-align: right;
+}
+
+.play-anywhere{
+  flex-direction: row-reverse;
+  margin-top: 100px;
+}
+.floating{
+  position: absolute;
+  top: 85%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .section_padding {
     padding: 40px 130px;
@@ -342,6 +384,20 @@ background-clip: text;
     gap: 10px;
     position: relative;
   }
+  .float{
+    position: absolute;
+    top: 75%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+  .floating{
+    position: absolute;
+    top: 85%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
 }
 @media screen and (max-width: 768px) and (min-width: 576px) {
   .section_padding {
@@ -405,6 +461,19 @@ background-clip: text;
     gap: 20px;
     position: relative;
   }
+  .play-row{
+    flex-direction: column;
+  }
+  .play-anywhere{
+    flex-direction:column;
+    margin-top: 29px;
+  }
+  .upper-image{
+    width: 90%;
+    height: 90%;
+  }
+  
+  
 }
 
 @media screen and (max-width: 576px) and (min-width: 320px) {
@@ -477,4 +546,33 @@ background-clip: text;
     gap: 20px;
     position: relative;
   }
+  .play-row{
+    flex-direction: column;
+    margin-top: 7px;
+    gap: 20px;
+  }
+  .play-anywhere{
+    flex-direction:column;
+    margin-top: 35px;
+    
+  }
+  .upper-image{
+    width: 90%;
+    height: 90%;
+  }
+  .float{
+    position: absolute;
+    top: 85%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+  }
+  .floating{
+    position: absolute;
+    top: 85%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+  }
+  
 }
