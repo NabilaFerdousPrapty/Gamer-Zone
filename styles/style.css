@@ -149,7 +149,6 @@ we are gamer section starts here
 }
 .we_are_gamer-content {
   text-align: right;
-  
 }
 .we_are_gamer-image {
   width: 592px;
@@ -174,29 +173,119 @@ width: 455px; */
   margin: 21px 0px 28px 0px;
 }
 
-.our-purpose{
+.our-purpose {
   width: 100%;
-  color: #534C64;
-font-size: 28px;
-font-weight: 700;
-line-height: 39px;
+  color: #534c64;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 39px;
 }
-.our-purpose span{
+.our-purpose span {
+  color: #534c64;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 39px; /* 187.5% */
+}
+
+/* .......................
+we are gamer section starts here 
+........................ */
+
+/* ...............................
+funny videos section starts here 
+............................... */
+
+.section-title {
+  color: #0b0223;
+  text-align: center;
+
+  font-size: 42px;
+  font-weight: 700;
+}
+.section-title span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Work Sans;
+  font-size: 42px;
+  font-weight: 700;
+}
+.section-para{
   color: #534C64;
-font-size: 21px;
-font-weight: 500;
-line-height: 39px; /* 187.5% */
+text-align: center;
+font-size: 15px;
+line-height: 26px; /* 166.667% */
+padding: 20px 0px 42px 0px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  position: relative;
+}
+.play {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    lightgray 50% / cover no-repeat;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+}
+.card {
+  border-radius: 12px;
+  border: 3px solid var(--Linear, #ff42a5);
+}
+
+.play-me {
+  position: absolute;
+  top: 52%;
+  left: 60%;
+  text-align: center;
+}
+.card-para {
+  padding: 20px 0px;
+  color: #534c64;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.play-me-text{
+  text-align: center;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .section_padding {
-    padding: 40px 150px;
+    padding: 40px 130px;
   }
   .banner-image {
     max-width: 100%;
   }
   .we_are_gamer-image {
-   width: 100%;
-   height: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  .play-me {
+   
+    top: 45%;
+    left: 55%;
+    text-align: center;
+  }
+  .cards {
+    gap: 5px;
   }
 }
 
@@ -242,7 +331,17 @@ line-height: 39px; /* 187.5% */
   .we_are_gamer-image {
     width: 100%;
     height: 100%;
-   }
+  }
+  .play-me {
+   
+    top: 28%;
+    left: 78%;
+  }
+  .cards {
+  
+    gap: 10px;
+    position: relative;
+  }
 }
 @media screen and (max-width: 768px) and (min-width: 576px) {
   .section_padding {
@@ -294,7 +393,18 @@ line-height: 39px; /* 187.5% */
   .we_are_gamer-image {
     width: 100%;
     height: 100%;
-   }
+  }
+  .play-me {
+   
+    top: 68%;
+    left: 18%;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 576px) and (min-width: 320px) {
@@ -355,5 +465,16 @@ line-height: 39px; /* 187.5% */
   .we_are_gamer-image {
     width: 100%;
     height: 100%;
-   }
+  }
+  .play-me {
+   
+    top: 64%;
+    left: 35%;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    position: relative;
+  }
 }
